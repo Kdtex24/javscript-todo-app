@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Todo Javascript Aplicattion</title>
-	 <meta charset="utf-8">
-     <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App | Javscript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-	<div class="container">
-		<h1>Javacript Project <br>To-do list</h1>
-
-		<div class="add-elements">
-			<input id="add" type="text" placeholder="Add a Task To Perform">
-			<button id="btn">Add</button>
-		</div>
-
-		<div class="element-list">
-			<ul id="list">
-				<li>Bigstack Tech Web</li>
-				<li>Javascript Todo app</li>
-			</ul>
-		</div>
-
-	</div>
-
-	<script src="app.js"></script>
+  <div class="wrapper">
+    <center><header>Javascript Todo App</header>
+    <h6>By Kedeayei Okoi</h6></center>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new todo">
+      <button><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todoList">
+      <!-- data comes from local storage -->
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"></span> pending tasks</span>
+      <button>Clear All</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 
 </body>
 </html>
